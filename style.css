@@ -297,7 +297,7 @@ nav{
         height: 300px;
         margin: auto;
         overflow: hidden;
-        border: 2px solid #ddd;
+        border: 1px solid #ddd;
         border-radius: 10px;
     }
 
@@ -446,6 +446,10 @@ footer > p{
     color: black;
 }
 
+#display-mobile{
+    display: none;
+}
+
 @media (max-width: 600px) {
     header{
         
@@ -488,15 +492,24 @@ footer > p{
 
     .tecnologias{
         height: max-content;
-        padding: 10px;
+        padding: 50px;
     }
 
     .tecnologias > p{
+        display: none;
+    }
+
+    #display-mobile{
         max-width: 100%;
+        text-align: center;
+        display: block;
+        font-size: small;
     }
 
     .tecnologias > ul{
-        flex-direction: column;
+        flex-direction: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #contato > .midia-contact{
@@ -504,9 +517,15 @@ footer > p{
     }
 
     .meus-projetos{
-        padding: 30px 20px;
+        padding: 50px 20px;
         gap: 0px;
         height: fit-content;
+    }
+
+    .meus-projetos > p{
+        font-size: small;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     #suporte{
