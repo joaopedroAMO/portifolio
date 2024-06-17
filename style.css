@@ -456,6 +456,7 @@ footer > p{
         height: 100vh;
         padding: 30px;
         height: max-content;
+        gap: 50px;
     }
 
     #menu{
@@ -468,7 +469,7 @@ footer > p{
     }
 
     .text-infos{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
@@ -500,5 +501,40 @@ footer > p{
 
     #contato > .midia-contact{
         flex-direction: column;
+    }
+
+    .meus-projetos{
+        padding: 30px 20px;
+        gap: 0px;
+        height: fit-content;
+    }
+
+    #suporte{
+        height: 210px;
+        width: 100%;
+        gap: 20px;
+        display: flex;
+    }
+
+    .carousel-container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carousel-control {
+        width: 50px;
+        height: 40px;
+    }
+
+    .prev {
+        transform: translatey(0%);
+    }
+
+    .next {
+        transform: translatey(0%);
+    }
+
+    footer > p{
+        text-align: center;
     }
 }
